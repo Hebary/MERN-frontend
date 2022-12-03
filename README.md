@@ -7,6 +7,6 @@ MERN App, where you can create your own projects to admin them.
 
 
 ### Built with 🛠️
-##### ReactJS, NodeJS, MongoDB, Express, Tailwindcss, Headless Ui and more! 
+##### ReactJS, NodeJS, MongoDB, Express, Tailwindcss, Scoket IO Headless Ui and more! 
 
 #### Author: Bernardo F. D'Addario
