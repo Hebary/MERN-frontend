@@ -1,7 +1,7 @@
 
-MERN App, where you can create your own projects to admin them.  
 
 ## MERN Project Manager App ⚡️
+###### MERN App, where you can create your own projects to admin them.  
 
 ### [Try App Online](https://project-manager-vite.netlify.app)🔑
 
