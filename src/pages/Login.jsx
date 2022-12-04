@@ -31,20 +31,20 @@ const Login = () => {
             navigate("/projects");
         } catch (error) {
             setAlert({
-                msg: error.response.data.msg,
+                msg: error.response.data?.msg,
                 error: true
             })
         }
     }
 
-    const { msg } = alert;
+   
     return (
         <div className="animate">
             <h1 className="animate text-5xl text-sky-600 font-black capitalize">Log in and manage your{' '}
                 <span className="text-gray-600">projects</span></h1>
 
             {
-                msg && <Alert alert={alert} />
+                alert?.msg && <Alert alert={alert} />
             }
 
             <form className="mt-10 bg-white shadow-lg rounded-lg py-5 px-8"
