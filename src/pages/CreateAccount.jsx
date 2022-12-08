@@ -1,10 +1,11 @@
+import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axiosClient from '../../config/axiosClient';
 import Alert from '../components/Alert';
 
 
-const Registry = () => {
+const CreateAccount = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -70,7 +71,7 @@ const {msg} = alert;
 
     return (
         <div className="animate">
-            <h1 className="animate text-5xl text-sky-600 font-black capitalize">Register now to manage your{' '}
+            <h1 className="animate text-5xl text-center text-sky-600 font-black capitalize">Sign up and manage your{' '}
                 <span className="text-gray-600">projects</span>
             </h1>
             {
@@ -134,18 +135,18 @@ const {msg} = alert;
                     cursor-pointer rounded-md w-full mt-7 mb-4 transition-colors duration-200"
                 />
             </form>
-            <nav className="lg:flex lg:justify-between">
+            <nav className="lg:flex lg:justify-center">
                 <Link to='/' 
                     className="block border-b uppercase  py-2 text-center my-5 text-slate-600 hover:text-sky-800 uppercasse text-sm"
                 >¿Do You Have An Account? Log in
                 </Link>
-                <Link to="/reset_password"
+                {/* <Link to="/reset_password"
                     className="block border-b  uppercase py-2 text-center my-5 text-slate-600 hover:text-sky-800 uppercasse text-sm"
                 >I forgot my password
-                </Link>
+                </Link> */}
             </nav>
         </div>    
     )
 }
 
-export default Registry
+export default CreateAccount

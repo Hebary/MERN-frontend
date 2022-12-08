@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Login from "./pages/Login"
-import Registry from "./pages/Registry"
-import ResetPassword from "./pages/ResetPassword"
-import NewPassword from "./pages/NewPassword"
-import ConfirmAccount from "./pages/ConfirmAccount"
+import CreateAccount from "./pages/CreateAccount"
+// import ResetPassword from "./pages/ResetPassword"
+// import NewPassword from "./pages/NewPassword"
+// import ConfirmAccount from "./pages/ConfirmAccount"
 import Projects from "./pages/Projects"
 import CreateProject from "./pages/CreateProject"
 import ProjectDetails from "./pages/ProjectDetails"
@@ -25,10 +25,10 @@ function App() {
             <Routes>
               <Route path="/" element={<AuthLayout/>}>
                 <Route index element={<Login/>}/>
-                <Route path="/registry" element={<Registry/>}/>
-                <Route path="/reset_password" element={<ResetPassword/>}/>
-                <Route path="/reset_password/:token" element={<NewPassword/>}/>
-                <Route path="/confirm/:token" element={<ConfirmAccount/>}/>
+                <Route path="/create-account" element={<CreateAccount/>}/>
+                {/* <Route path="/reset_password" element={<ResetPassword/>}/> */}
+                {/* <Route path="/reset_password/:token" element={<NewPassword/>}/> */}
+                {/* <Route path="/confirm/:token" element={<ConfirmAccount/>}/> */}
               </Route>
 
               <Route path="/projects" element={<ProtectedRoute/>}>

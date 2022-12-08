@@ -40,7 +40,7 @@ const Login = () => {
    
     return (
         <div className="animate">
-            <h1 className="animate text-5xl text-sky-600 font-black capitalize">Log in and manage your{' '}
+            <h1 className="animate text-5xl text-center text-sky-600 font-black capitalize">Log in and manage your{' '}
                 <span className="text-gray-600">projects</span></h1>
 
             {
@@ -80,15 +80,15 @@ const Login = () => {
                     cursor-pointer rounded-md w-full mt-7 mb-4 transition-colors duration-200"
                 />
             </form>
-            <nav className="lg:flex lg:justify-between">
-                <Link to={'/registry'}
+            <nav className="lg:flex lg:justify-center">
+                <Link to={'/create-account'}
                     className="block border-b uppercase  py-2 text-center my-5 text-slate-600 hover:text-sky-800 uppercasse text-sm"
                 >Create new account
                 </Link>
-                <Link to="/reset_password"
+                {/* <Link to="/reset_password"
                     className="block border-b  uppercase py-2 text-center my-5 text-slate-600 hover:text-sky-800 uppercasse text-sm"
                 >I forgot my password
-                </Link>
+                </Link> */}
             </nav>
         </div>
     )

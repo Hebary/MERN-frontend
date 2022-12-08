@@ -37,7 +37,6 @@ const ProjectsProvider = ({ children }) => {
                 }
                 const { data } = await axiosClient('/projects', config);
                 setProjects(data);
-
             } catch (error) {
                 console.log(error)
             }

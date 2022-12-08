@@ -2,7 +2,7 @@
   "name": "Project Manager MERN App",
   "private": true,
   "version": "1.0.0",
-  "author":"Bernardo D'Addario",
+  "author": "Bernardo D'Addario",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
